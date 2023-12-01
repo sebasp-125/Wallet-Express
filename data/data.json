@@ -1,85 +1,11 @@
 {
   "user": [
     {
-      "id": 1,
-      "nombre": "sebas",
-      "contrasena": "",
-      "c_seguridad": "",
-      "correo": "sebasp125qgmail.com"
-    },
-     {
-      "id": 2,
-      "nombre": "sebas",
-      "contrasena": "2014",
-      "c_seguridad": "2014",
-      "correo": "sebasp125qgmail.com"
-
-     },
-     {
-      "id": 3,
-      "nombre": "andrea",
-      "contrasena": "2014",
-      "c_seguridad": "2014",
-      "correo": "andreap125qgmail.com"
-     },
-     {
-      "id" : 4,
-      "nombre": "alexandra",
-      "contrasena": "2014",
-      "c_seguridad": "2014",
-      "correo": "alexandrap125qgmail.com"
-
-     },
-
-
-    {
-      "id": "a4e86949-37ce-497b-b118-0641be1fd99b",
-      "nombre": "sebas",
-      "contrasena": "2014",
-      "c_seguridad": "2014",
-      "correo": "sp6027193@gamil.com"
-    },
-    {
-      "id": "b7d429c5-e7eb-47a3-9f4d-0875fe570bf6",
-      "nombre": "pollo",
-      "contrasena": "2014",
-      "c_seguridad": "2014",
-      "correo": "sp6027193@gamil.com"
-    },
-    {
-      "id": "f52c5753-05d5-43a5-b225-6c10dd088601",
-      "nombre": "sasassa",
-      "contrasena": "1022143260",
-      "c_seguridad": "2314",
-      "correo": "dsad@gmail.cokm"
-    },
-    {
-      "id": "aa04e4ea-f3d9-4dc0-9581-4182874dae68",
-      "nombre": "Samuel2414",
-      "contrasena": "1022143260",
-      "c_seguridad": "4344",
-      "correo": "samdipi@pipi234"
-    },
-    {
-      "id": "738121fb-423b-4b52-9836-551e30d673a8",
-      "nombre": "pollo",
-      "contrasena": "204147",
-      "c_seguridad": "2014",
-      "correo": "daasd@sa102.com"
-    },
-    {
-      "id": "9857781a-8a51-4b16-a350-6a2a27664e73",
-      "nombre": "Mendoza",
-      "contrasena": "2014",
-      "c_seguridad": "2014",
-      "correo": "sp6027193@gamil.com"
-    },
-    {
-      "id": "4c580851-31cf-460f-a3ac-7c36b9fcc98b",
-      "nombre": "Andrea",
-      "contrasena": "2017",
-      "c_seguridad": "2014",
-      "correo": "sp6027193@gamil.com"
+      "nombre": "FormularioForForFor",
+      "c_seguridad": "1414",
+      "correo": "sp6027193@gamil.com",
+      "contrasena": "141414",
+      "id": "e51bf7f3-7b17-4796-9de4-bb1ed11e8cff"
     }
   ]
 }

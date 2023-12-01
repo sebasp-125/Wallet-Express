@@ -1,46 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
     <title>Iniciar Sesión</title>
 </head>
+<div class="container_img">
+    <img src="./imagenes/Gold coins and banknotes 3d cartoon style icon.jpg" alt="img">
+</div>
+
 <body>
-    <body>
-        <h1 class="title">Bienvenido a WalletExpress</h1>
-        <h4 class="subtitle">Ingrese sus datos</h4>
-        <div class="form">
-            
-                <label for="usuario">Usuario:</label>
-                <input type="text" id="usuario"  required placeholder="Ingrese Nombe de Usuario">
-                
-                <label for="c_seguridad">Ingrese su codigo de Seguridad: </label>
-                <input type="number" id="c_seguridad"  required placeholder="Codigo de Seguridad">
+    <div class="form">
+        <section class="form-register">
+            <h1 class="title">Bienvenido a WalletExpress</h1>
+            <h4 class="subtitle">Ingrese sus datos</h4>
+            <label for="usuario">Usuario:</label>
+            <input class="controls" type="text" id="usuario" required placeholder="Ingrese Nombe de Usuario">
 
-                <label for="contrasena">Contraseña: </label>
-                <input type="password" id="contrasena"  required placeholder="Contraseña">
-                
-                <button id="login-master">Login</button>
-                <button class="btn-acceder" type="submit" id="acceder">Acceder</button>
-                <button class="" type="submit" id="admin">Administrador</button>
-        </div>
+            <label for="c_seguridad">Ingrese su codigo de Seguridad: </label>
+            <input class="controls" type="number" id="c_seguridad" required placeholder="Codigo de Seguridad">
 
-        <style>
-            .btn-acceder {
-                background-color: #000000;
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-            }
-        </style>
+            <label for="contrasena">Contraseña: </label>
+            <input class="controls" type="password" id="contrasena" required placeholder="Contraseña">
 
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script src="./login.js"></script>
+            <button class="btn-login" id="login-master">Login</button>
+            <button class="btn-acceder" type="submit" id="acceder">Acceder</button>
+            <button class="btn-administrar" type="submit" id="admin">Administrador</button>
+    </div>
+    </section>
+    <style>
+        .container_img {
+            padding-bottom: 30px;
+            transform: translate(-50%, -50%);
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .btn-login,
+        .btn-acceder,
+        .btn-administrar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: #24303c;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./login.js"></script>
 </body>
+
 </html>
