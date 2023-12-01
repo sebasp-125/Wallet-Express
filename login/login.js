@@ -17,6 +17,8 @@ console.log(contrasena)
 const acceder = document.getElementById('acceder')
 const admin = document.getElementById('admin')
 
+
+
 const Validacion = async (nombre, contrasena, c_seguridad) => {
     try {
 
@@ -54,4 +56,8 @@ Validacion(usuario.value, contrasena.value, c_seguridad.value); // Mando los Dat
 })
 
 
+admin.addEventListener('click' , function(){
+    console.log("....")
+    window.location.href = "administrador.html"
+})
 

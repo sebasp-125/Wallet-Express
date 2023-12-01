@@ -11,13 +11,15 @@ btnRegister.addEventListener('submit' , function() {
 })
 
 //------------------Slider---------------------------
-const imagenes = ["https://res.cloudinary.com/dlwr6vxib/image/upload/v1697740610/fotos/Pekka.webp", "https://media.istockphoto.com/id/1443305526/es/foto/joven-sonriente-con-auriculares-escribiendo-en-el-teclado-de-una-computadora-port%C3%A1til.jpg?s=1024x1024&w=is&k=20&c=Lq2h77UE_J1JPvYpCio8p0nac6Uy2iYdblqW_Tfba6g=" ,
-    "https://res.cloudinary.com/dlwr6vxib/image/upload/v1697740609/fotos/caballero.png", "https://res.cloudinary.com/dlwr6vxib/image/upload/v1697740609/fotos/bruja.png",
-    "https://res.cloudinary.com/dlwr6vxib/image/upload/v1697740610/fotos/los-pillos.png", "https://res.cloudinary.com/dlwr6vxib/image/upload/v1697740609/fotos/goblin.webp",
-    "https://res.cloudinary.com/dlwr6vxib/image/upload/v1697740609/fotos/arquero.png", "https://res.cloudinary.com/dlwr6vxib/image/upload/v1697740610/fotos/montaPuercos.webp",
-    "https://res.cloudinary.com/dlwr6vxib/image/upload/v1697740610/fotos/Miner_info.webp", "https://res.cloudinary.com/dlwr6vxib/image/upload/v1697740610/fotos/principe.png",
-    "https://res.cloudinary.com/dlwr6vxib/image/upload/v1697740609/fotos/dragon.png"];
-
+const imagenes = [
+    'img/slider/1.png',
+    'img/slider/2.png',
+    'img/slider/3.png',
+    'img/slider/4.png',
+    'img/slider/5.png',
+    'img/slider/6.png',
+  ];
+  
     let score = 0;
 
 ImagenHTL.setAttribute("src" , imagenes[0])
