@@ -33,9 +33,13 @@ const Validacion = async (nombre, contrasena, c_seguridad) => {
                     if (c_seguridad == datos_usuarios[i].c_seguridad) {
                         console.log(c_seguridad , datos_usuarios[i].c_seguridad)
                         console.log("Paso seguridad")
+                        localStorage.setItem("contrasena", JSON.stringify(datos_usuarios[i]))// IMPORTATE!!!
                         acceder.style.backgroundColor ='blue'
                         acceder.addEventListener('click' , function(){
                             window.location.href = "cuenta__local.html"
+                            //en el localStorage, a la hora de exportarlos nos va a mostrar
+                            //un [Object][Object] ¿Por que?, Por que se manda en JSON y el LocalStorage no 
+                            //permite JSON, Asi que toca aplicar los cambios que ves. Volviendolo String, Texto Plan
                         })
                         break // el Break s e activa cuando todos los datos son true
                     }
@@ -56,8 +60,4 @@ Validacion(usuario.value, contrasena.value, c_seguridad.value); // Mando los Dat
 })
 
 
-admin.addEventListener('click' , function(){
-    console.log("....")
-    window.location.href = "administrador.html"
-})
 
