@@ -1,40 +1,74 @@
-* {
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
 }
 
-body {
-    margin-left:30% ;
-    background-color: rgb(104, 142, 185);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    min-height: 100vh; 
+body{
+    background-image: url(../login/imagenes/Wallet\ Express\ black.png);
+    background-repeat: no-repeat;
+    background-size: 1350px 810px;
 }
 
-
-
-.form-register{
+.form{
     width: 400px;
-    background: #145897;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
     padding: 30px;
-    color: white;
-    margin-top: 10px;
-    border-radius: 10px;
-    font-family: calibri ;
-    box-shadow: 7px 13px 37px #000;
+    margin: auto;
+    margin-top: 120px;
+    border-radius: 4px;
 }
 
-.form-register h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
+
+
+.form h3{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 800;
 }
 
-.controls { 
-    color: white;
+.input{
     width: 100%;
-    background:#24303c ;
+    background: transparent;
+    border: none;
+    outline: none;
     padding: 10px;
-    border-radius:5px ;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
     margin-bottom: 16px;
-    border:1px solid #1f53c5 ;
+    border: 1px solid #fff;
+}
+
+.input::placeholder{
+    color: #fff;
+}
+
+
+
+.form .btn {
+    width: 100%;
+    background: #1f54c59f;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.btn-acceder {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
