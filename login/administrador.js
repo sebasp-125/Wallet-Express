@@ -11,6 +11,8 @@ const refresh_correo = document.getElementById('refresh_correo');
 const refresh_contrasena = document.getElementById('refresh_contrasena');
 const guardar_edicion = document.getElementById('guardar_edicion');
 
+const editar_nombre = document.getElementById('resultados');
+
 console.log(".....");
 
 const fetchData = async () => {
@@ -22,6 +24,9 @@ const fetchData = async () => {
     throw error;
   }
 };
+
+//--------------------CREACION DE LA TABLA DE LA BASE DE JSON-----------------------------------------
+// BOTONES DE ELIMINAR Y DE EDITAR. CON UN innerHTML para que envie los datos.
 
 const obtenerDatos = async () => {
   try {
@@ -64,7 +69,8 @@ const obtenerDatos = async () => {
 
 obtenerDatos();
 
-//Eliminar
+
+//----------------------------------------------ELIMINAR-----------------------------------
 //El target es para q cuando le den click al btn de eliminar me traiga el btn, o como tal la etiqueta.
 document.addEventListener('click', async ({ target }) => {
   if (target.classList.contains('eliminar_usuario')) {
@@ -83,8 +89,9 @@ document.addEventListener('click', async ({ target }) => {
   }
 });
 
-let id_usu ;
 
+//---------------------------------CREAR Y CONSERVAR EDICCION---------------------------------------
+let id_usu;
 document.addEventListener('click', async ({ target }) => {
 
   if (target.classList.contains('editar_usuario')) {
@@ -111,7 +118,7 @@ document.addEventListener('click', async ({ target }) => {
 })
 
 
-
+//----------------------GUARDAR EDICCION-----------------------------------------
 document.addEventListener('click', async ({ target }) => {
   if (target.classList.contains('guardar_edicion')) {
     console.log("click")
@@ -141,8 +148,8 @@ document.addEventListener('click', async ({ target }) => {
         refresh_c_seguridad.value = ''
         refresh_nombre.value = ''
         refresh_correo.value = ''
-        refresh_contrasena.value = ''      
-  
+        refresh_contrasena.value = ''
+
       }
 
       //REFRESF
@@ -153,6 +160,40 @@ document.addEventListener('click', async ({ target }) => {
 })
 
 
+//--------------------------------------BUSCADOR--------------------------------------
+document.addEventListener('keyup', e => {
+  if (e.target.matches("#buscador")) {
+    if (e.key === "Escape") {
+      e.target.value = "";
+    }
+    let resultados = 0;
+    let filtroEncontrado = "";
+
+    document.querySelectorAll(".articulo").forEach(fruta => {
+      const contieneTexto = fruta.textContent.toLowerCase().includes(e.target.value.toLowerCase());
+  
+      if (contieneTexto) {
+        fruta.parentElement.classList.remove('filtro');
+        resultados++;
+        filtroEncontrado += `${fruta.textContent}\n`;  // Agrega un salto de línea
+      } else {
+        fruta.parentElement.classList.add('filtro'); // Caso contrario
+      }
+    });
+
+    console.log(filtroEncontrado);
+    //Me Muestra cuantos resultados hay
+    const editar_nombre = document.getElementById("resultados");
+    if (editar_nombre) {
+      editar_nombre.textContent = `Mostrando ${resultados} resultados`;
+    }
+
+    const filtroEncontradoElemento = document.getElementById('filtroEncontrado');
+    if (filtroEncontradoElemento) {
+      filtroEncontradoElemento.textContent = filtroEncontrado;
+    }
+  }
+});
 
 //const refresh_nombre = document.getElementById('refresh_nombre');
 //const refresh_c_seguridad = document.getElementById('refresh_c_seguridad');
